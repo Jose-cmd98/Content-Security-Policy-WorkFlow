@@ -2,7 +2,27 @@
 
   <main>
     <div class="title-div">
-      <span class="title">Have an account?</span>
+      <p class="title">Have an account?</p>
+    </div>
+    <div class="login-box">
+      <form class="form-box">
+
+        <input class="input-form" type="text" placeholder="Username">
+
+        <input class="input-form" type="password" placeholder="Password">
+
+        <button [routerLink]="['/home']" class="button">SING IN</button>
+      </form>
+      <div class="info-box">
+        <div class="checkbox">
+          <input class="box" type="checkbox" checked>
+          <p class="remember">Remember Me</p>
+        </div>
+        <div class="passInfo">
+          <a href="">Forgot Password</a>
+        </div>
+      </div>
+      <h4 class="singin-text">Or Sing in With</h4>
     </div>
   </main>
 </body>

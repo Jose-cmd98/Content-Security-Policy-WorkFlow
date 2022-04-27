@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .img{
   background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0.15)), url('https://preview.colorlib.com/theme/bootstrap/login-form-20/images/xbg.jpg.pagespeed.ic.tiVxeakBSd.webp');
   min-height: calc(100vh - 0px);
@@ -7,12 +9,124 @@
 }
 .title-div{
   text-align: center;
-  padding-top: 100px;
-  font-weight: 300;
+  padding-top: 150px;
+  font-weight: 200;
 }
 
 .title{
+  font-family: 'Roboto', sans-serif;
   color: #fff;
-  font-weight: 300;
-  font-size: 30px;
+  font-weight: 200;
+  font-size: 1.75rem;
+  margin-bottom: 25px;
+}
+.login-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:  center;
+}
+.form-box{
+  display: flex;
+  flex-direction: column;
+}
+.input-form{
+  padding: 15px;
+  width: 350px;
+  border-radius: 50px;
+  border-style: none;
+  border:none;
+  border: 1px solid #00000000;
+  margin-bottom: 15px;
+  background: rgba(255,255,255,.08);
+  color:white;
+  font-size: 1rem;
+        &.input-form:focus{
+          outline: 0;
+          box-shadow: 0 0 0 0;
+        }
+        &.input-form::placeholder{
+          color:white;
+        }
+        &.input-form:hover{
+          background-color: #00000000;
+          border: 1px solid white;
+        }
+}
+
+
+.button{
+  border-radius: 50px;
+  border-style: none;
+  padding: 15px;
+  margin-bottom: 8px;
+  background-color: #fbceb5;
+    &.button:hover{
+      cursor: pointer;
+      background-color: #f7b8a3;
+      transition: background-color .2s;
+    }
+}
+
+.login-box .info-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+  margin-top: 25px;
+}
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+.box{
+  all:unset;
+  border: 1px solid #DDD;
+  background-color: rgba(255,255,255,.08);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-left: 4px;
+   &.box:checked{
+     background-color: #f7b8a3;
+   }
+}
+.remember{
+  font-family: 'Roboto', sans-serif;
+  color: #f7b8a3;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.passInfo a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+.passInfo a:hover{
+  color: #f7b8a3;
+  transition: .2s;
+}
+
+.singin-text{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 18px;
+    &.singin-text::before{
+      content: '⸺';
+      margin-right: 8px;
+    }
+    &.singin-text::after{
+      content: '⸺';
+      margin-left: 8px;
+    }
 }
