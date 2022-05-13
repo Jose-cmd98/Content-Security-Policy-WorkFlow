@@ -1,0 +1,37 @@
+.full-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(to right, rgb(0, 114, 255), rgb(0, 198, 255));
+}
+.full-title > h2, h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 200;
+}
+
+.section-show{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.js-button{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 45px;
+  width: 50%;
+  text-align: center;
+      &.js-button:hover{
+        cursor: pointer;
+        background-color: #fff;
+        transition: .8s;
+      }
+}
+.show-on{
+  width: 55%;
+}

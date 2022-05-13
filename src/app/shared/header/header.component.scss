@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100&family=Raleway:wght@100;400&family=Roboto:wght@100&display=swap');
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+    &.logo::after{
+      content: "”";
+      color: #fff;
+    }
+}
+
+.nav-bar{
+  padding: 5px;
+  margin: 5px;
+    & a{
+      margin-right: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+    & a:hover{
+      cursor: pointer;
+      color: #fff;
+    }
+}
+.menu{
+  position:absolute;
+  top:15px;
+  right:30px;
+  z-index:500;
+  height:50px;
+  border-radius:25px;
+  overflow:hidden;
+  // background:#444;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  transition:all .5s ease;
+
+  &>*{
+    float:left;
+  }
+  &.menu:hover{
+
+    cursor: pointer;
+    background-color: rgba(41, 48, 49, 0.623);
+  }
+}
+
+.menu-toggle{
+  display:block;
+  cursor:pointer;
+  opacity:0;
+  z-index:999;
+  margin:0;
+  width:50px;
+  height:50px;
+  position:absolute;
+  top:0;
+  left:0;
+  &:checked~ul{
+    width:150px;
+    background-position:0px -50px;
+  }
+}
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0 0 0 50px;
+  height:50px;
+  width:0px;
+  transition:.5s width ease;
+  background-image:url("https://i.imgur.com/3d0vJzn.png");
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+}
+
+li{
+  display:inline-block;
+  line-height:50px;
+  width:50px;
+  text-align:center;
+  margin:0;
+
+  a{
+    font-size:1.25em;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+  }
+  a:hover{
+    color:rgb(1, 206, 120);
+    transform: scale(1.1);
+  }
+}
